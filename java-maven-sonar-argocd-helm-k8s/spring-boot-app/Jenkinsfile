@@ -9,7 +9,11 @@ pipeline {
     stage('Checkout') {
       steps {
         sh 'echo passed'
+ HEAD:java-maven-sonar-argocd-helm-k8s/spring-boot-app/Jenkinsfile
         //git branch: 'main', url: 'https://git@github.com:Rashmithagowda1812/Jenkins-Zero-To-Hero.git'
+
+        //git branch: 'main', url: 'git@github.com:Rashmithagowda1812/Jenkins-Zero-To-Hero.git'
+ ce95397 (Rename JenkinsFile to Jenkinsfile and update contents):java-maven-sonar-argocd-helm-k8s/spring-boot-app/JenkinsFile
       }
     }
     stage('Build and Test') {
