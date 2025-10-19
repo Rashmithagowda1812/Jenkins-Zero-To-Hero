@@ -11,7 +11,7 @@ pipeline {
       steps {
         sh 'echo ✅ Code Checkout Stage'
     
-        // git branch: 'main', url: 'https://github.com/Rashmithagowda1812/Jenkins-Zero-To-Hero'
+        git branch: 'main', url: 'https://github.com/Rashmithagowda1812/Jenkins-Zero-To-Hero'
       }
     }
 
@@ -25,7 +25,7 @@ pipeline {
 
     stage('Static Code Analysis') {
       environment {
-        SONAR_URL = "http://13.202.84.209:9000/" 
+        SONAR_URL = "http://13.203.23.32:9000//" 
       }
       steps {
         withCredentials([string(credentialsId: 'sonarqube', variable: 'SONAR_AUTH_TOKEN')]) {
